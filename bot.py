@@ -45,7 +45,7 @@ def next_turn():
 
 def week_cicle():
     while True:
-        if date.today().strptime("%d/%m/%y") = db[-1]['end_date']
+        if db[-1]['end_date'] in date.today().strptime("%d/%m/%y"):
             next_turn()
         sleep(86000)
 
@@ -58,19 +58,19 @@ def update_db():
         json.dump(db, f, ensure_ascii=False, indent=4)
 
 def start(update, context):
+    global turn_list
     load_db()
     for t in turn_list['list']:
-        if db[-1]['owner'] = t.id:
-            global turn_list
+        if db[-1]['owner'] == t.id:
             turn_list['curret_owner'] = t
             turn_list['index'] = turn_list['list'].index(turn_list['curret_owner'])
             update.message.reply_text(f"è il turno di {turn_list['curret_owner'].name}")
 
 def help_command(update, context):
-    update.message.reply_text(f"{update.message.from.id} --> {update.message.from.username}")
+    update.message.reply_text(f"{update.message.reply_to_message.from.id} --> {update.message.chat.username}")
 
 def add_album(update, context):
-    if update.message.from.id = turn_list['current_owner'].id:
+    if update.message.chat.id == turn_list['current_owner'].id:
         global db
         db[-1]['album_link'] = update.message.text.split(' ')[1]
         update_db()
@@ -85,7 +85,7 @@ def info_current(update, context):
         
 def vote_current(update, context):
     for t in turn_list['list']:
-        if t.id = update.message.from.id
+        if t.id == update.message.chat.id:
             global db
             db[-1]['score'].append({"user":t.user, "id": t.id, "voto": int(update.message.text.split(' ')[1])})
             update_db()
@@ -102,11 +102,11 @@ def main():
     dispatcher.add_handler(CommandHandler("aggiungi_album", add_album))
     dispatcher.add_handler(CommandHandler("info_album", info_current))
     dispatcher.add_handler(CommandHandler("vota_album_corrente", vote_current))
-    x = threading.Thread(target=week_cicle, args=(,))
-    x.start()
+    #x = threading.Thread(target=week_cicle, args=(,))
+    #x.start()
     updater.start_polling()
     updater.idle()
-    x.join()
+    #x.join()
 
 if __name__ == "__main__":
     main()
