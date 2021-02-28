@@ -1,0 +1,16 @@
+[
+    {
+        "turn": 1,
+        "owner": "Silve",
+        "init_date": "",
+        "album_name":"",
+        "album_link": "",
+        "score": [
+            {
+                "user": "Albi",
+                "id": 0,
+                "voto": 0
+            }
+        ]
+    }
+]
