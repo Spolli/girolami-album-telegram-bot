@@ -2,9 +2,55 @@
     {
         "turn": 1,
         "owner": "Silve",
-        "init_date": "",
-        "album_name":"",
-        "album_link": "",
+        "owner_id": 0,
+        "init_date": "05/02/21",
+        "end_date": "11/02/21",
+        "album_link": "https://open.spotify.com/album/187UNqZ7MX3neMYkkevmdm?si=ReNYdcHFRLKvfefWSSv2ZA&utm_source=native-share-menu",
+        "score": [
+            {
+                "user": "Albi",
+                "id": 0,
+                "voto": 0
+            }
+        ]
+    },
+    {
+        "turn": 2,
+        "owner": "Khadim",
+        "owner_id": 0,
+        "init_date": "12/02/21",
+        "end_date": "18/02/21",
+        "album_link": "https://open.spotify.com/album/3POFHE3boZiEeiCCbc08vf?si=pHVf3pffTuSF6N4vBLdT6g&utm_source=native-share-menu",
+        "score": [
+            {
+                "user": "Albi",
+                "id": 0,
+                "voto": 0
+            }
+        ]
+    },
+    {
+        "turn": 3,
+        "owner": "Dani",
+        "owner_id": 0,
+        "init_date": "19/02/21",
+        "end_date": "25/02/21",
+        "album_link": "https://open.spotify.com/album/1bkN9nIkkCnXeG4yitVS1J",
+        "score": [
+            {
+                "user": "Albi",
+                "id": 0,
+                "voto": 0
+            }
+        ]
+    },
+    {
+        "turn": 4,
+        "owner": "Matti",
+        "owner_id": 0,
+        "init_date": "26/02/21",
+        "end_date": "5/03/21",
+        "album_link": "https://open.spotify.com/album/0BCjAmbM8ryCM9gxy5yW7h?si=T7efJsH9QI6_Z73wU9w5Xw",
         "score": [
             {
                 "user": "Albi",
