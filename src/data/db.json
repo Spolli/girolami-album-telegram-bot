@@ -36,13 +36,7 @@
         "init_date": "19/02/21",
         "end_date": "25/02/21",
         "album_link": "https://open.spotify.com/album/1bkN9nIkkCnXeG4yitVS1J",
-        "score": [
-            {
-                "user": "Albi",
-                "id": 0,
-                "voto": 0
-            }
-        ]
+        "score": []
     },
     {
         "turn": 4,
@@ -53,9 +47,14 @@
         "album_link": "https://open.spotify.com/album/0BCjAmbM8ryCM9gxy5yW7h?si=T7efJsH9QI6_Z73wU9w5Xw",
         "score": [
             {
-                "user": "Albi",
-                "id": 0,
-                "voto": 0
+                "user": "albi",
+                "id": 958468633,
+                "voto": 10
+            },
+            {
+                "user": "tatticadanito",
+                "id": 151631757,
+                "voto": 4
             }
         ]
     }

@@ -115,22 +115,22 @@ Link: \t{db[-1]['album_link']}
     bot.sendMessage(msg['chat']['id'], text)
         
 def vote_current(msg):
-    if not check_if_voted:
-        try:
-            global db
-            usr = get_usr_by_id(msg['from']['id'])
-            db[-1]['score'].append({
-                "user":usr['name'], 
-                "id": usr['id'], 
-                "voto": int(msg['text'].split(' ')[1])
-                })
-            update_json('src/data/db.json', db)
-            bot.sendMessage(msg['chat']['id'], f"{usr['name']} ha dato come voto {int(msg['text'].split(' ')[1])} all'album")
-            return
-        except e:
-            bot.sendMessage(msg['chat']['id'], "Diocane Input sbagliato. Ma che sei handicappato?")
-    else:
-        bot.sendMessage(msg['chat']['id'], "Hai già votato questo album coglione")
+    try:
+        if not check_if_voted(msg['from']['id']):
+                global db
+                usr = get_usr_by_id(msg['from']['id'])
+                db[-1]['score'].append({
+                    "user":usr['name'], 
+                    "id": usr['id'], 
+                    "voto": int(msg['text'].split(' ')[1])
+                    })
+                update_json('src/data/db.json', db)
+                bot.sendMessage(msg['chat']['id'], f"{usr['name']} ha dato come voto {int(msg['text'].split(' ')[1])} all'album")
+                return
+        else:
+            bot.sendMessage(msg['chat']['id'], "Hai già votato questo album coglione")
+    except Exception:
+        bot.sendMessage(msg['chat']['id'], "Hai sbagliato l'input coglione")
 
 def skip_turn(msg):
     bot.sendMessage(msg['chat']['id'], f"{db[-1]['owner']} ha saltato il turno")
