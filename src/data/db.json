@@ -6,13 +6,7 @@
         "init_date": "05/02/21",
         "end_date": "11/02/21",
         "album_link": "https://open.spotify.com/album/187UNqZ7MX3neMYkkevmdm?si=ReNYdcHFRLKvfefWSSv2ZA&utm_source=native-share-menu",
-        "score": [
-            {
-                "user": "Albi",
-                "id": 0,
-                "voto": 0
-            }
-        ]
+        "score": []
     },
     {
         "turn": 2,
@@ -21,13 +15,7 @@
         "init_date": "12/02/21",
         "end_date": "18/02/21",
         "album_link": "https://open.spotify.com/album/3POFHE3boZiEeiCCbc08vf?si=pHVf3pffTuSF6N4vBLdT6g&utm_source=native-share-menu",
-        "score": [
-            {
-                "user": "Albi",
-                "id": 0,
-                "voto": 0
-            }
-        ]
+        "score": []
     },
     {
         "turn": 3,
@@ -41,21 +29,19 @@
     {
         "turn": 4,
         "owner": "Matti",
-        "owner_id": 0,
+        "owner_id": 638642931,
         "init_date": "26/02/21",
         "end_date": "5/03/21",
         "album_link": "https://open.spotify.com/album/0BCjAmbM8ryCM9gxy5yW7h?si=T7efJsH9QI6_Z73wU9w5Xw",
-        "score": [
-            {
-                "user": "albi",
-                "id": 958468633,
-                "voto": 10
-            },
-            {
-                "user": "tatticadanito",
-                "id": 151631757,
-                "voto": 4
-            }
-        ]
+        "score": []
+    },
+    {
+        "turn": 5,
+        "owner": "albi",
+        "owner_id": 958468633,
+        "init_date": "06/03/2021",
+        "end_date": "13/03/21",
+        "album_link": "ciccio",
+        "score": []
     }
 ]
