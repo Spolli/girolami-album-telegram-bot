@@ -7,7 +7,7 @@ from time import sleep
 
 import telepot
 from telepot.loop import MessageLoop
-from src.data.API import API_KEY, turn_list
+from src.data.API import API_KEY, chat_id
 from src.model.user import User
 from src.model.utility_json import load_json, update_json, append_obj
 
@@ -50,7 +50,7 @@ def check_if_voted(id):
 
 def next_turn():
     global db, curr_usr
-    if curr_usr['index'] >= len(users)-1:
+    if curr_usr['index'] > len(users)-1:
         curr_usr = users[0]
         #TODO classifica di fine giro
     else:
@@ -59,8 +59,8 @@ def next_turn():
         "turn": db[-1]['turn']+1,
         "owner": curr_usr['name'],
         "owner_id": curr_usr['id'],
-        "init_date": datetime.today().strftime('%d/%m/%YYYY'),
-        "end_date": (datetime.today() + timedelta(days=7)).strftime("%d/%m/%YYYY") ,
+        "init_date": datetime.today().strftime('%d/%m/%Y'),
+        "end_date": (datetime.today() + timedelta(days=7)).strftime("%d/%m/%Y") ,
         "album_link": "",
         "score": []
     }

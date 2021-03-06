@@ -3,8 +3,8 @@
         "turn": 1,
         "owner": "Silve",
         "owner_id": 0,
-        "init_date": "05/02/21",
-        "end_date": "11/02/21",
+        "init_date": "05/02/2021",
+        "end_date": "11/02/2021",
         "album_link": "https://open.spotify.com/album/187UNqZ7MX3neMYkkevmdm?si=ReNYdcHFRLKvfefWSSv2ZA&utm_source=native-share-menu",
         "score": []
     },
@@ -12,8 +12,8 @@
         "turn": 2,
         "owner": "Khadim",
         "owner_id": 0,
-        "init_date": "12/02/21",
-        "end_date": "18/02/21",
+        "init_date": "12/02/2021",
+        "end_date": "18/02/2021",
         "album_link": "https://open.spotify.com/album/3POFHE3boZiEeiCCbc08vf?si=pHVf3pffTuSF6N4vBLdT6g&utm_source=native-share-menu",
         "score": []
     },
@@ -21,8 +21,8 @@
         "turn": 3,
         "owner": "Dani",
         "owner_id": 0,
-        "init_date": "19/02/21",
-        "end_date": "25/02/21",
+        "init_date": "19/02/2021",
+        "end_date": "25/02/2021",
         "album_link": "https://open.spotify.com/album/1bkN9nIkkCnXeG4yitVS1J",
         "score": []
     },
@@ -30,18 +30,9 @@
         "turn": 4,
         "owner": "Matti",
         "owner_id": 638642931,
-        "init_date": "26/02/21",
-        "end_date": "5/03/21",
+        "init_date": "26/02/2021",
+        "end_date": "5/03/2021",
         "album_link": "https://open.spotify.com/album/0BCjAmbM8ryCM9gxy5yW7h?si=T7efJsH9QI6_Z73wU9w5Xw",
-        "score": []
-    },
-    {
-        "turn": 5,
-        "owner": "albi",
-        "owner_id": 958468633,
-        "init_date": "06/03/2021",
-        "end_date": "13/03/21",
-        "album_link": "ciccio",
         "score": []
     }
 ]
