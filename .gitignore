@@ -130,3 +130,4 @@ dmypy.json
 .vscode/settings.json
 src/data/API.py
 src/data/db.json
+src/data/users.json
